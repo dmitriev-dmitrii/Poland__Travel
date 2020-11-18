@@ -188,7 +188,7 @@ margin: 1.5em auto;
 	border: none;
 	outline: none;
 	width: 2em;
-	min-height: 2em;
+	min-height: 1.5em;
 	height: 100%;
 background-color:transparent;
 	transform: rotate(1deg) ;
@@ -196,8 +196,6 @@ background-color:transparent;
 
 	&:focus {
 		transform: rotate(25deg) ;
-		box-shadow: 0px 0px 3px 1px rgba(141, 148, 169, 0.459);
-		background-color: rgba(141, 148, 169, 0.158);
 	}
 
 }
@@ -208,8 +206,7 @@ background-color:transparent;
 {
 	&:hover {
 		transform: rotate(25deg) ;
-		box-shadow: 0px 0px 3px 1px rgba(141, 148, 169, 0.459);
-		background-color: rgba(141, 148, 169, 0.158);
+
 	}
 }
 
@@ -260,12 +257,17 @@ transition: all 0.4s linear;
 }
 @media only screen and (min-width: 991px)
 {
+.go-top-btn
+{
 	&:hover
 {
 	background-color: rgba(134, 134, 134, 0.815);
 	border: 1px solid  white;
 	box-shadow: rgba(134, 134, 134, 0.815) 0 0 5px 3px;
 }
+
+}
+
 }
 }
 

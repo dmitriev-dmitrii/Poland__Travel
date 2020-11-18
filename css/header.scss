@@ -192,26 +192,48 @@ padding: 0 2em;
 
 .header__title-txt,.header__title-two-txt 
 {
-  
   color: rgb(255, 255, 255);
   font-weight: bold;
   @include large-font;
+
+  animation:madword 3s 0.1s linear ;
 }
 
 .header__title-txt
 {
-  // letter-spacing: 7em;
-  // text-shadow: 0 0 1em ;
-// animation: madletters;
+text-shadow: 0 0 0.5em;
+letter-spacing: 0em;
 }
 .header__title-two-txt 
 {
+  letter-spacing: 0em;
   color: #ed6950;
-  // letter-spacing: 5em;
-// text-shadow: 0 0 1em ;
-// -webkit-text-stroke: 1px #000000;
+
 }
 
+@keyframes madword {
+	0% {
+color:transparent;
+letter-spacing: 7em;
+  }
+
+  50% {
+  text-shadow: 0 0 2em;
+  letter-spacing: 0em;
+  }
+60% {
+  text-shadow: 0 0 0em;
+  letter-spacing: 0em;
+  }
+	70% {
+text-shadow: 0 0 2em;
+letter-spacing: 0em;
+}
+100% {
+  text-shadow: 0 0 0em;
+  letter-spacing: 0em;
+  }
+}
 
 
 .header__subtitle-txt
