@@ -47,18 +47,18 @@ transition: all 0.4s linear;
 
 
 
-.content__head-item:nth-child(1).content__head-item:active  
+.content__head-item:nth-child(1).content__head-item:focus  
 .content__sity-line-item-btn
 {
 @include hover-btn-grey;
 }
-.content__head-item:nth-child(2).content__head-item:active  
+.content__head-item:nth-child(2).content__head-item:focus  
 .content__sity-line-item-btn
 {
 @include hover-btn-orange;
 }
 
-.content__head-item:nth-child(3).content__head-item:active  
+.content__head-item:nth-child(3).content__head-item:focus  
 .content__sity-line-item-btn
 {
 @include hover-btn-grey;

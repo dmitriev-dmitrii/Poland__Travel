@@ -25,7 +25,7 @@ box-shadow: 0px 0px 7px 3px transparent;
 user-select: none;
 transition:all 0.4s linear;
 cursor: pointer;
-&:active
+&:focus
 {
   background-color: rgba(141, 148, 169, 0.233);
   box-shadow: 0px 0px 7px 3px rgb(141, 148, 169 );
@@ -67,51 +67,51 @@ text-shadow: black 0 0 0px;
 }
 
 
-.content__sity-line-item.content__sity-line-item:active .content__sity-line-item-subtitle 
+.content__sity-line-item.content__sity-line-item:focus .content__sity-line-item-subtitle 
 {
 text-shadow: black 0 0 2px;
 }
 
 
-.content__sity-line-item.content__sity-line-item:active
+.content__sity-line-item.content__sity-line-item:focus
   .content__sity-line-item-title {
   -webkit-text-stroke: 1.5px rgb(41, 47, 54); 
   }
 
-  .content__sity-line-item.content__sity-line-item:active
+  .content__sity-line-item.content__sity-line-item:focus
   .content__sity-line-item-img 
   {
   box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.418);
   filter: brightness(105%);
   }
 
-  .content__sity-line-item:nth-child(1).content__sity-line-item:active 
+  .content__sity-line-item:nth-child(1).content__sity-line-item:focus 
   .content__sity-line-item-btn
   {
     @include hover-btn-white;
   }
-  .content__sity-line-item:nth-child(2).content__sity-line-item:active 
+  .content__sity-line-item:nth-child(2).content__sity-line-item:focus 
   .content__sity-line-item-btn
   {
 @include hover-btn-orange;
   }
-  .content__sity-line-item:nth-child(3).content__sity-line-item:active 
+  .content__sity-line-item:nth-child(3).content__sity-line-item:focus 
   .content__sity-line-item-btn
   {
     @include hover-btn-white;
   }
-  .content__sity-line-item:nth-child(4).content__sity-line-item:active 
+  .content__sity-line-item:nth-child(4).content__sity-line-item:focus 
   .content__sity-line-item-btn
   {
     @include hover-btn-grey;
   }
-  .content__sity-line-item:nth-child(5).content__sity-line-item:active 
+  .content__sity-line-item:nth-child(5).content__sity-line-item:focus 
   .content__sity-line-item-btn
   {
     @include hover-btn-orange;
   }
 
-  .content__sity-line-item:nth-child(6).content__sity-line-item:active 
+  .content__sity-line-item:nth-child(6).content__sity-line-item:focus 
   .content__sity-line-item-btn
   {
     @include hover-btn-grey;

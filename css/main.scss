@@ -85,7 +85,7 @@ a,.button {
 	{
 		outline: none;
 	}
-	&:active
+	&:focus
 	{
 		outline: none;
 	}
@@ -152,7 +152,7 @@ margin: 1.5em auto;
 	background-color: #ffc74a;
 	color: #b98000;
 	border:#ffc74a 1px solid ;
-	&:active {
+	&:focus {
 @include hover-btn-orange()
 	}
 }
@@ -162,7 +162,7 @@ margin: 1.5em auto;
 	color: #ffffff;
 	border: 1px solid  rgb(189, 200, 217);
 
-	&:active {
+	&:focus {
 		@include hover-btn-grey()
 	}
 }
@@ -171,7 +171,7 @@ margin: 1.5em auto;
 	background-color: #ffffff;
 	color: rgb(189, 200, 217);
 	border: 1px solid  rgb(189, 200, 217);
-	&:active {
+	&:focus {
 		@include hover-btn-white()
 
 	}
@@ -194,7 +194,7 @@ background-color:transparent;
 	transform: rotate(1deg) ;
 	transition:all 0.4s ease-in-out;
 
-	&:active {
+	&:focus {
 		transform: rotate(25deg) ;
 		box-shadow: 0px 0px 3px 1px rgba(141, 148, 169, 0.459);
 		background-color: rgba(141, 148, 169, 0.158);
@@ -250,9 +250,9 @@ background-color: rgba(134, 134, 134, 0.466);
 border: 1px solid transparent;
 position: fixed;
 bottom: 4vw;
-right: 4vw;
+right: 2vw;
 transition: all 0.4s linear;
-&:active
+&:focus
 {
 	background-color: rgba(134, 134, 134, 0.815);
 	border: 1px solid  white;

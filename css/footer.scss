@@ -9,6 +9,7 @@
 
 background-image:  url(../img/footer/footer__bg-mobile.webp) ;
 background-position: right;
+background-color: grey;
 
 display: flex;
 justify-content: space-evenly;
@@ -29,7 +30,7 @@ line-height: 4em;
   color: #ffffff;
 transition: all 0.4s linear;
 text-decoration: underline transparent;
-  &:active
+  &:focus
   {
     text-shadow: 0 0 5px;
     text-decoration: underline ;
