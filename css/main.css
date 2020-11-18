@@ -354,7 +354,7 @@ a:hover, .button:hover {
   color: white;
   font-weight: bold;
   font-size: 40px;
-  animation: madword 3s 0.1s linear;
+  animation: madword 3s 0.2s;
 }
 @media only screen and (min-width: 576px) {
   .header__title-txt, .header__title-two-txt {
@@ -380,23 +380,25 @@ a:hover, .button:hover {
 .header__title-two-txt {
   letter-spacing: 0em;
   color: #ed6950;
+  text-shadow: 0 0 0.5em;
 }
 
 @keyframes madword {
   0% {
+    text-shadow: 0 0 0em;
     color: transparent;
-    letter-spacing: 7em;
+    letter-spacing: 10em;
+    line-height: 5em;
   }
   50% {
-    text-shadow: 0 0 2em;
-    letter-spacing: 0em;
-  }
-  60% {
     text-shadow: 0 0 0em;
     letter-spacing: 0em;
   }
-  70% {
-    text-shadow: 0 0 2em;
+  80% {
+    text-shadow: 0 0 1em;
+  }
+  90% {
+    text-shadow: 0 0 0em;
     letter-spacing: 0em;
   }
   100% {
@@ -677,7 +679,7 @@ a:hover, .button:hover {
   color: white;
   font-weight: bold;
   font-size: 40px;
-  animation: madword 3s 0.1s linear;
+  animation: madword 3s 0.2s;
 }
 @media only screen and (min-width: 576px) {
   .header__title-txt, .header__title-two-txt {
@@ -703,23 +705,25 @@ a:hover, .button:hover {
 .header__title-two-txt {
   letter-spacing: 0em;
   color: #ed6950;
+  text-shadow: 0 0 0.5em;
 }
 
 @keyframes madword {
   0% {
+    text-shadow: 0 0 0em;
     color: transparent;
-    letter-spacing: 7em;
+    letter-spacing: 10em;
+    line-height: 5em;
   }
   50% {
-    text-shadow: 0 0 2em;
-    letter-spacing: 0em;
-  }
-  60% {
     text-shadow: 0 0 0em;
     letter-spacing: 0em;
   }
-  70% {
-    text-shadow: 0 0 2em;
+  80% {
+    text-shadow: 0 0 1em;
+  }
+  90% {
+    text-shadow: 0 0 0em;
     letter-spacing: 0em;
   }
   100% {

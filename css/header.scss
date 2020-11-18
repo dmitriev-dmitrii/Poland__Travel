@@ -196,7 +196,7 @@ padding: 0 2em;
   font-weight: bold;
   @include large-font;
 
-  animation:madword 3s 0.1s linear ;
+  animation:madword 3s 0.2s  ;
 }
 
 .header__title-txt
@@ -208,27 +208,30 @@ letter-spacing: 0em;
 {
   letter-spacing: 0em;
   color: #ed6950;
-
+  text-shadow: 0 0 0.5em;
 }
 
 @keyframes madword {
 	0% {
+    text-shadow: 0 0 0em;
 color:transparent;
-letter-spacing: 7em;
+letter-spacing: 10em;
+line-height: 5em;
   }
+    50% {
+      text-shadow: 0 0 0em;
+      letter-spacing: 0em;
 
-  50% {
-  text-shadow: 0 0 2em;
-  letter-spacing: 0em;
-  }
-60% {
-  text-shadow: 0 0 0em;
-  letter-spacing: 0em;
-  }
-	70% {
-text-shadow: 0 0 2em;
-letter-spacing: 0em;
-}
+      }
+
+      80% {
+        text-shadow: 0 0 1em;
+        }
+    90% {
+      text-shadow: 0 0 0em;
+      letter-spacing: 0em;
+
+      }
 100% {
   text-shadow: 0 0 0em;
   letter-spacing: 0em;
