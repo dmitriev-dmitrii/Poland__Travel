@@ -351,7 +351,7 @@ a:hover, .button:hover {
   color: white;
   font-weight: bold;
   font-size: 40px;
-  animation: madword 3s 0.2s;
+  animation: madword 3s 0.5s;
 }
 @media only screen and (min-width: 576px) {
   .header__title-txt, .header__title-two-txt {
@@ -675,7 +675,7 @@ a:hover, .button:hover {
   color: white;
   font-weight: bold;
   font-size: 40px;
-  animation: madword 3s 0.2s;
+  animation: madword 3s 0.5s;
 }
 @media only screen and (min-width: 576px) {
   .header__title-txt, .header__title-two-txt {
