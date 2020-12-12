@@ -1,19 +1,17 @@
 .content {
-
 }
 .content__head-wrapper {
   width: 100%;
   background: linear-gradient(to bottom, #060606, #343434 5%, #fff, #fff);
-
 }
 
 .content__head-list {
   width: 97%;
   display: flex;
-flex-wrap: wrap;
-align-items: center;
-justify-content: center;
-margin: 0 auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .content__head-item {
@@ -25,71 +23,51 @@ margin: 0 auto;
   flex-direction: column;
   justify-content: flex-end;
   text-align: center;
-margin: 0 1vw;
-user-select: none;
-transition: all 0.4s linear;
+  margin: 0 1vw;
+  user-select: none;
+  transition: all 0.4s linear;
 
-
-  &:nth-child(1) 
-  {
-    background: linear-gradient(to top, #000000,#06060600),url(../img/content/head/Zakopane.png);
+  &:nth-child(1) {
+    background: linear-gradient(to top, #000000, #06060600), url(../img/content/head/Zakopane.png);
   }
-  &:nth-child(2) 
-  {
-  background: linear-gradient(to top, #060606,#06060600),url(../img/content/head/Sandomierz.png);
+  &:nth-child(2) {
+    background: linear-gradient(to top, #060606, #06060600), url(../img/content/head/Sandomierz.png);
   }
-  &:nth-child(3) 
-  {
-  background: linear-gradient(to top, #060606,#06060600),url(../img/content/head/Sopot.png);
+  &:nth-child(3) {
+    background: linear-gradient(to top, #060606, #06060600), url(../img/content/head/Sopot.png);
   }
-
 }
 
-
-
-.content__head-item:nth-child(1).content__head-item:focus  
-.content__sity-line-item-btn
-{
-@include hover-btn-grey;
+.content__head-item:nth-child(1).content__head-item:focus .content__sity-line-item-btn {
+  @include hover-btn-grey;
 }
-.content__head-item:nth-child(2).content__head-item:focus  
-.content__sity-line-item-btn
-{
-@include hover-btn-orange;
+.content__head-item:nth-child(2).content__head-item:focus .content__sity-line-item-btn {
+  @include hover-btn-orange;
 }
 
-.content__head-item:nth-child(3).content__head-item:focus  
-.content__sity-line-item-btn
-{
-@include hover-btn-grey;
+.content__head-item:nth-child(3).content__head-item:focus .content__sity-line-item-btn {
+  @include hover-btn-grey;
 }
-
 
 .content__head-item-title {
   @include title-font;
   color: rgba(255, 255, 255, 0.902);
   font-weight: bold;
-  margin:0 0.5em;
-
+  margin: 0 0.5em;
 }
 
 .content__head-item-subtitle {
   @include regular-font;
   color: rgb(255, 199, 74);
-
 }
-
 
 .content__title {
   @include subtitle-font;
   color: rgb(96, 111, 129);
   font-weight: bold;
   text-align: center;
-margin: 3em 0;
-
+  margin: 3em 0;
 }
-
-
 
 .content__search-form {
   margin: 0 auto;
@@ -107,202 +85,187 @@ margin: 3em 0;
 }
 
 .content__search-form-input {
-
   box-shadow: 0px 0px 7px 3px rgba(141, 148, 169, 0.15);
   outline: none;
   border: 1px #ffff solid;
   border-radius: 40px;
   color: rgba(50, 55, 61, 0.3);
-width: 100%;
+  width: 100%;
   text-align: center;
   outline: none;
   @include regular-font;
-padding: 0.5em 0;
-display: block;
+  padding: 0.5em 0;
+  display: block;
 
-transition: 0.4s all linear;
+  transition: 0.4s all linear;
   &:focus {
     color: rgb(50, 55, 61);
     box-shadow: 0px 0px 7px 3px rgba(141, 148, 169, 1);
   }
 }
 
-.content__search-form-btn
-{
+.content__search-form-btn {
   position: absolute;
-  right:0 ;
+  right: 0;
   top: 0;
 }
 
-
-.content__btn-line-wrapper,.content__btn-line  {
-
- display: flex;
- align-items: center;
-
-width: 100%;
+.content__btn-line-wrapper,
+.content__btn-line {
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
-.content__btn-line-wrapper
-{
+.content__btn-line-wrapper {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 2vw auto;
 }
 
+.content__btn-line.animation__active {
 
 
+}
+.content__btn-line-wrapper.animation__active .content__btn-line:nth-child(1) {
 
+animation:content__btn-line1 2s  ;
+}
+.content__btn-line-wrapper.animation__active .content__btn-line:nth-child(2) {
+
+  animation:content__btn-line2 2s   ;
+  }
+@keyframes content__btn-line1 {
+
+  0% {
+    transform: translateX(-150%) ;
+  }
+  100% {
+    transform: translateX(0%) ;
+  }
+}
+@keyframes content__btn-line2 {
+
+  0% {
+    transform: translateX(150%) ;
+  }
+  100% {
+    transform: translateX(0%) ;
+  }
+}
 @media only screen and (min-width: 576px) {
   .content__btn-line {
-width: 49%;
+    width: 49%;
   }
-  .content__btn-line-wrapper
-  {
+  .content__btn-line-wrapper {
     flex-wrap: wrap;
     margin: 2vw auto;
     width: 97%;
   }
 
   .content__head-list {
-  flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
-  .content__search-form
-  {
+  .content__search-form {
     width: 60%;
   }
 }
 
 @media only screen and (min-width: 767px) {
   .content__btn-line {
-
     width: 40%;
-      }
-      .content__btn-line-wrapper
-      {
-        width: 90%;
-      }
+  }
+  .content__btn-line-wrapper {
+    width: 90%;
+  }
 }
 
 @media only screen and (min-width: 991px) {
-
-   .content__btn-line-wrapper
-   {
-
-     margin: 2vw auto;
-     @include max-w;
-   
-   }
-   .content__btn-line {
-
+  .content__btn-line-wrapper {
+    margin: 2vw auto;
+    @include max-w;
+  }
+  .content__btn-line {
     width: 30%;
-      }
-   .content__search-form
-   {
-     width: 50%;
-   }
+  }
+  .content__search-form {
+    width: 50%;
+  }
 
-
-   .content__head-item {
+  .content__head-item {
     height: 90vw;
     width: 100%;
     max-width: 250px;
     max-height: 400px;
+  }
 
+  .content__head-item:nth-child(3) {
+    position: relative;
 
-   }
-
-   .content__head-item:nth-child(3)
-   {
-     position: relative;
-
-     &::after
-     {
-       position: absolute;
-       top:0;
-       right:calc( -100% + -2vw);
-      content: ' ';
+    &::after {
+      position: absolute;
+      top: 0;
+      right: calc(-100% + -2vw);
+      content: " ";
 
       height: 90vw;
       width: 100%;
       max-width: 250px;
       max-height: 400px;
 
-      background: linear-gradient(to top, #060606,#06060600),url(../img/content/head/Photo_dark_right.png);
+      background: linear-gradient(to top, #060606, #06060600), url(../img/content/head/Photo_dark_right.png);
       cursor: auto;
-     }
-   }
+    }
+  }
 
-   .content__head-item:nth-child(3)
-   {
-     position: relative;
-     
-     &::after
-     {
-       position: absolute;
-       top:0;
-       right:calc( -100% + -2vw);
-      content: ' ';
+  .content__head-item:nth-child(3) {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      right: calc(-100% + -2vw);
+      content: " ";
 
       height: 90vw;
       width: 100%;
       max-width: 250px;
       max-height: 400px;
 
-      background: linear-gradient(to top, #060606,#06060600),url(../img/content/head/Photo_dark_right.png);
+      background: linear-gradient(to top, #060606, #06060600), url(../img/content/head/Photo_dark_right.png);
       cursor: auto;
-     }
-   }
-      .content__head-item:nth-child(1)
-   {
-     position: relative;
-     
-     &::before
-     {
-       position: absolute;
-       top:0;
-       right:calc( 100% + 2vw);
-      content: ' ';
+    }
+  }
+  .content__head-item:nth-child(1) {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: calc(100% + 2vw);
+      content: " ";
 
       height: 90vw;
       width: 100%;
       max-width: 250px;
       max-height: 400px;
 
-      background: linear-gradient(to top, #060606,#06060600),url(../img/content/head/Photo_dark_left.png);
+      background: linear-gradient(to top, #060606, #06060600), url(../img/content/head/Photo_dark_left.png);
       cursor: auto;
-     }
-   }
+    }
+  }
 
+  .content__head-item:hover {
+    cursor: pointer;
+  }
 
+  .content__head-item:nth-child(1).content__head-item:hover .content__sity-line-item-btn {
+    @include hover-btn-grey;
+  }
+  .content__head-item:nth-child(2).content__head-item:hover .content__sity-line-item-btn {
+    @include hover-btn-orange;
+  }
 
-
-
-   .content__head-item:hover 
-   {
-cursor: pointer;
-   }
-
-.content__head-item:nth-child(1).content__head-item:hover 
-.content__sity-line-item-btn
-{
-@include hover-btn-grey;
-
+  .content__head-item:nth-child(3).content__head-item:hover .content__sity-line-item-btn {
+    @include hover-btn-grey;
+  }
 }
-.content__head-item:nth-child(2).content__head-item:hover 
-.content__sity-line-item-btn
-{
-@include hover-btn-orange;
-
-}
-
-.content__head-item:nth-child(3).content__head-item:hover 
-.content__sity-line-item-btn
-{
-@include hover-btn-grey;
-
-}
-
-}
-
-
-

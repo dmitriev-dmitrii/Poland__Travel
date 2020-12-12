@@ -234,7 +234,6 @@ background-color:transparent;
 
 .go-top-btn
 {
-
 	width: 2em;
 	height: 2em;
 	border-radius: 50%;
@@ -249,17 +248,7 @@ position: fixed;
 bottom: 4vw;
 right: 2vw;
 transition: all 0.4s linear;
-&:focus
-{
-	background-color: rgba(134, 134, 134, 0.815);
-	border: 1px solid  white;
-	box-shadow: rgba(134, 134, 134, 0.815) 0 0 5px 3px;
-}
-@media only screen and (min-width: 991px)
-{
-.go-top-btn
-{
-	&:hover
+&:hover,&:focus
 {
 	background-color: rgba(134, 134, 134, 0.815);
 	border: 1px solid  white;
@@ -268,10 +257,10 @@ transition: all 0.4s linear;
 
 }
 
+.animation
+{
+visibility: hidden;
 }
-}
-
-
 @import "header.scss";
 @import "header.scss";
 @import "footer.scss";
