@@ -47,11 +47,6 @@ window.onscroll = function () {
 }
 
 
-
-
-
-
-	
 // анимации
 
 	const animationItems = document.querySelectorAll('.animation');
@@ -60,13 +55,10 @@ window.onscroll = function () {
 		return e.getBoundingClientRect();	
 	}
 
-
 	window.addEventListener('scroll', scrollAnimation);
 
 
-
 function scrollAnimation() {
-
 
 
 	for (let index = 0; index < animationItems.length; index++) {
@@ -75,7 +67,7 @@ function scrollAnimation() {
 		console.log(document.scrollingElement.scrollTop);
 		console.log(document.body.scrollTop );
 
-		if (document.body.scrollTop || document.scrollingElement.scrollTop >=  ItemPosition(currentItem).top + ItemPosition(currentItem).height * 2  ) 
+		if (document.body.scrollTop || document.scrollingElement.scrollTop >=  ItemPosition(currentItem).top + ItemPosition(currentItem).height * 5  ) 
 
 		{
 			console.log();
@@ -85,4 +77,3 @@ function scrollAnimation() {
 		} 
 	}
 }
-setTimeout(scrollAnimation, 5000);
